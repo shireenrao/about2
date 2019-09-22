@@ -23,7 +23,7 @@ AUTHOR_FEED_RSS = None
 
 THEME = "theme/simple"
 
-STATIC_PATHS = ["images", "css", "extra/CNAME"]
+STATIC_PATHS = ["images", "extra/CNAME"]
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 DEFAULT_PAGINATION = False
