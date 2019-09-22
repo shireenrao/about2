@@ -27,5 +27,7 @@ slug: contact
 
 In case a page is needed which is not needed in the navigation section, just add a `status: hidden` metadata tag in the header of the markdown file.
 
+## css/scss
 
+The scss for the site is stored under theme/simple/static/scss. The generated css is under theme/simple/static/css. To make changes to the css, make scss changes then go to theme/simple and execute runner.py to re-generate the main.css
 
