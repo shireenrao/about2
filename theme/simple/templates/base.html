@@ -6,7 +6,9 @@
   <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
   <meta charset="utf-8" />
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" />
+  {% assets filters="libsass,cssmin", output="css/main.min.css", "scss/main.scss" %}
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+  {% endassets %}
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ FAVICON }}" />
   <link rel="shortcut icon" href="{{ FAVICON }}" />

@@ -12,8 +12,15 @@ Prerequisites:
 pelican -lr
 ```
 
-`pelican -lr` generates the html in the output directory and starts a local web server where you can go browse the site at <http://localhost:8000/>. You need to execute this command from the root of the project.
+`pelican -lr` generates the html in the docs directory and starts a local web server where you can go browse the site at <http://localhost:8000/>. You need to execute this command from the root of the project.
 
+```
+make html
+```
+
+Use `make html` to just generate the html in the docs directory. 
+
+Once you are happy with the results, you can add and commit your changes and push to github. This will update the main website.
 
 ## Pages 
 This site is setup to only display pages. All markdown content is located under content/pages. All pages are setup to show up as navigation links. A typical page metadata in the header needs to be as follows:
@@ -29,5 +36,5 @@ In case a page is needed which is not needed in the navigation section, just add
 
 ## css/scss
 
-The scss for the site is stored under theme/simple/static/scss. The generated css is under theme/simple/static/css. To make changes to the css, make scss changes then go to theme/simple and execute runner.py to re-generate the main.css
+The scss for the site is stored under theme/simple/static/scss. The generated css is under docs/theme/css. Just change, main.scss and pelican will generate the minified css for you.
 
